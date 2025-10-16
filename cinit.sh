@@ -138,7 +138,7 @@ produce_main(){
 	echo -e "int main(){
 		//
 		return 0;
-	}" > $src_name/main.c
+	}" > "$src_name/main.c"
 }
 
 produce_gitignore(){
