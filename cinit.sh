@@ -149,6 +149,7 @@ initialise_git(){
 	echo "Initialising Git"
 	git init &> /dev/null
 	git branch -M main &> /dev/null
+	produce_gitignore
 }
 
 initialise_dir(){
@@ -221,3 +222,4 @@ $i_git && initialise_git
 $i_clangd && produce_clangd
 $i_readme && produce_readme
 produce_makefile
+initialise_dir
