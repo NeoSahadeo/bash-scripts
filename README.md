@@ -12,7 +12,7 @@ A set of useful bash scripts to automate, build, test, run, and perform other ac
 #### [cinit](#cinit)
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/cinit.sh)
+source <(curl https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/cinit.sh); exec $SHELL -l
 ```
 
 ## Contributing
