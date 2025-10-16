@@ -5,14 +5,14 @@ A set of useful bash scripts to automate, build, test, run, and perform other ac
 
 ## Table of Contents
 
-- <a name="cinit">cinit</a> - Initialises a c-project
+- <a id="cinit">cinit</a> - Initialises a c-project
 
 ## Commands
 
 #### [cinit](#cinit)
 
 ```
-curl -sSl https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/cinit.sh | bash
+bash <(curl -s https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/cinit.sh)
 ```
 
 ## Contributing
