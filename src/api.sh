@@ -122,6 +122,5 @@ get_option(){
 			break
 		fi
 	done
-	echo ""
 	printf -v "$2" '%s' "$option"
 }
