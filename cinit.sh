@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source <(curl -s "https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/api.sh")
+
 # vars:
 target_name="main"
 libs=()
