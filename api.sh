@@ -8,6 +8,7 @@
 # CONSTANTS #
 #############
 CURSOR_UP="\e[A"
+CURSOR_DOWN="\e[1B"
 RESET="\e[0m"
 CLEAR_LINE="\e[2K"
 
@@ -84,7 +85,7 @@ replace_default(){
 					if [[ -z "$v" ]]; then # Handles default option
 						v=$varname
 					fi
-					printf "$CURSOR_UP\r$1 $BOLD_GREEN%s$RESET\n$CLEAR_LINE" "$v"
+					printf "\r$1 $BOLD_GREEN%s$RESET\n$CLEAR_LINE" "$v"
 					break
 					;;
 				*)
