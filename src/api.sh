@@ -116,9 +116,11 @@ get_option(){
 			option=$variable
 			break;
 		elif [[ $o == "y" ]]; then
+			printf "\n"
 			option=true
 			break
 		elif [[ $o == "n" ]]; then
+			printf "\n"
 			option=false
 			break
 		fi
