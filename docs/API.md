@@ -4,7 +4,7 @@ In order to import the API into your script include a source
 command.
 
 ```bash
-source <(curl -s "https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/api.sh")
+source <(curl -s "https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/src/api.sh")
 ```
 
 ## Colors

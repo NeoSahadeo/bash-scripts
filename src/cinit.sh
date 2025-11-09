@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source <(curl -s "https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/api.sh")
+source <(curl -s "https://raw.githubusercontent.com/NeoSahadeo/bash-scripts/refs/heads/main/src/api.sh")
 
 # vars:
 target_name="main"
