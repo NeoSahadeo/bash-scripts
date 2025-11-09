@@ -100,17 +100,21 @@ get_option(){
 	local yes="y"
 	local no="n"
 	local option
+	local variable=${!2}
 
-	if [[ $variable == true ]]; then
+	if $variable; then
 		yes="Y"
 	else
 		no="N"
 	fi
 
 	for ((;;)); do
-		read -p "$1 [$yes/$no] " o
+		read -N1 -p "$1 [$yes/$no] " o
 		o=${o,,}
-		if [[ $o == "y" ]]; then
+		if [[ $o == $'\n' ]]; then
+			option=$variable
+			break;
+		elif [[ $o == "y" ]]; then
 			option=true
 			break
 		elif [[ $o == "n" ]]; then
@@ -118,5 +122,6 @@ get_option(){
 			break
 		fi
 	done
+	echo ""
 	printf -v "$2" '%s' "$option"
 }
