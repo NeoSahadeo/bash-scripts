@@ -112,6 +112,7 @@ get_option(){
 		read -N1 -p "$1 [$yes/$no] " o
 		o=${o,,}
 		if [[ $o == $'\n' ]]; then
+			printf "$CURSOR_UP\n"
 			option=$variable
 			break;
 		elif [[ $o == "y" ]]; then
